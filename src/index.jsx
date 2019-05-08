@@ -307,6 +307,7 @@ export default createReactClass({
       PropTypes.node
 
     ]),
+    tabIndex: React.PropTypes.number,
     onInvalid: PropTypes.func,
     noValidate: PropTypes.bool
   },
@@ -654,6 +655,7 @@ export default createReactClass({
         className: this.props.className,
         style: this.props.style,
         autoComplete: this.props.autoComplete,
+        tabIndex: this.props.tabIndex,
         onInvalid: this.props.onInvalid,
         noValidate: this.props.noValidate,
       })
@@ -672,6 +674,7 @@ export default createReactClass({
           onBlur={this.handleBlur}
           onChange={this.handleInputChange}
           autoComplete={this.props.autoComplete}
+          tabIndex={this.props.tabIndex}
           onInvalid={this.props.onInvalid}
           noValidate={this.props.noValidate}
           />;
