@@ -307,7 +307,7 @@ export default createReactClass({
       PropTypes.node
 
     ]),
-    tabIndex: React.PropTypes.number,
+    tabIndex: PropTypes.number,
     onInvalid: PropTypes.func,
     noValidate: PropTypes.bool
   },
